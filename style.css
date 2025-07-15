@@ -1,0 +1,98 @@
+/* style.css - Custom styles for Streamlit dashboard */
+body, .stApp {
+    background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%) !important;
+    color: #222831 !important;
+    min-height: 100vh;
+}
+
+.main-header {
+    background: linear-gradient(90deg, #FFD369 0%, #00BFFF 100%);
+    border-radius: 16px;
+    padding: 32px;
+    margin-bottom: 32px;
+    box-shadow: 0 6px 32px rgba(0,0,0,0.10);
+}
+.main-header h1 {
+    color: #222831;
+    font-size: 2.7rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+.main-header p {
+    color: #222831;
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+.stTabs [data-baseweb="tab"] {
+    background: #f7f7f7 !important;
+    color: #222831 !important;
+    border-radius: 10px 10px 0 0;
+    font-size: 1.08rem;
+    font-weight: 600;
+    margin-right: 2px;
+}
+.stTabs [aria-selected="true"] {
+    background: #FFD369 !important;
+    color: #222831 !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.stButton>button, .stDownloadButton>button {
+    background: linear-gradient(90deg, #FFD369 0%, #00BFFF 100%);
+    color: #222831 !important;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 10px 24px;
+    font-size: 1.08rem;
+    transition: background 0.2s, color 0.2s;
+}
+.stButton>button:hover, .stDownloadButton>button:hover {
+    background: linear-gradient(90deg, #00BFFF 0%, #FFD369 100%);
+    color: #222831 !important;
+}
+.stDataFrame {
+    background: #fff !important;
+    color: #222831 !important;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    padding: 8px;
+}
+.stAlert {
+    background: #FFD369 !important;
+    color: #222831 !important;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.sidebar .sidebar-content {
+    background: #f7f7f7 !important;
+    color: #222831 !important;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    padding: 16px 8px;
+}
+.stMarkdown, .stSubheader, h2, h3, h4, h5, h6 {
+    background: transparent !important;
+    color: #222831 !important;
+    border-radius: 6px;
+    padding: 2px 8px;
+}
+/* Hide Streamlit's copy link/anchor next to headings (robust) */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+h1 svg, h2 svg, h3 svg, h4 svg, h5 svg, h6 svg,
+h1 [data-testid="stHeading-anchor-link"], h2 [data-testid="stHeading-anchor-link"], 
+h3 [data-testid="stHeading-anchor-link"], h4 [data-testid="stHeading-anchor-link"], 
+h5 [data-testid="stHeading-anchor-link"], h6 [data-testid="stHeading-anchor-link"] {
+    display: none !important;
+}
+/* Card-like effect for main content */
+section.main > div {
+    background: rgba(255,255,255,0.95);
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 32px 24px;
+    margin-bottom: 32px;
+}
